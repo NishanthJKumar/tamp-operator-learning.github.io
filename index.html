@@ -473,10 +473,6 @@ pre {
     <section id="main-video">
         <center>
             <figure>
-                <!-- <video class="centered" width="75%">
-                    <source src="materials/main_video_nonanon.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video> -->
                 <video class="centered" width="75%" controls="controls" preload="none" onclick="this.play()">
                     <source src="materials/main_video_nonanon.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -491,7 +487,7 @@ pre {
         <h2>Abstract</h2>
         <div class="flex-row">
             <p>
-            A goal of artificial intelligence is to construct a  agent that can solve a wide variety of tasks. Recent progress in text-guided image synthesis has yielded models with impressive abilities and rich combinatorial generalization of complex novel images across different domains.  Motivated by this success, we investigate whether we may use such tools to construct more general-purpose agents. Specifically, we cast the sequential decision making problem as a text-conditioned video generation problem, where, given a text-encoded specification of a desired goal, a planner synthesizes a set of future frames depicting its planned actions in the future, and the actions will be extracted from the generated video.  By leveraging text as our underlying goal specification, we are able to naturally combinatorially generalize to unseen goals. Our policy-as-video formulation can further represent environments with different state and action spaces in a unified space of images, enabling learning and generalization across a wide range of robotic manipulation tasks. Finally, by leveraging pretrained language embeddings and widely available videos on the internet, our formulation enables knowledge transfer through predicting highly realistic video plans of real robots.
+            Bilevel planning, in which a high-level search over an abstraction of an environment is used to guide low-level decision-making, is an effective approach to solving long-horizon tasks in continuous state and action spaces. Recent work has shown how to enable such bilevel planning by learning action and transition model abstractions in the form of symbolic operators and neural samplers. In this work, we show that existing symbolic operator learning approaches fall short in many natural environments where agent actions tend to cause a large number of irrelevant propositions to change. This is primarily because they attempt to learn operators that optimize the prediction error with respect to observed changes in the propositions. To overcome this issue, we propose to learn operators that only model changes necessary for abstract planning to achieve the specified goal. Experimentally, we show that our approach learns operators that lead to efficient planning across 10 different hybrid robotics domains, including 4 from the challenging BEHAVIOR-100 benchmark, with generalization to novel initial states, goals, and objects.
             </p>
         </div>
     </section>
