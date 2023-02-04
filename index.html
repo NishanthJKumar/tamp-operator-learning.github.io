@@ -491,154 +491,61 @@ pre {
             </p>
         </div>
     </section>
-        
-
-    <section id="results">
-        <hr>
-        <h2>Combinatorial Generalization</h2>  
-            <div class="flex-row">
-                <p>	
-                Below, we illustrate generated videos on unseen combinatorial combinations of goals. Our approach is able to
-                synthesize a diverse set of different behaviors which satisfy unseen language subgoals.
-                </p>
-            </div> 
-
-            <center>
-            <figure>
-                <video width="1000" loop autoplay muted>
-                    <source src="materials/website_figure_1.mp4" type="video/mp4">
-                </video>
-            </figure>
-            </center>
-
-        <hr>
-
-
-        <h2>Multitask Learning</h2>  
-            <div class="flex-row">
-                <p>
-                Below, we illustrate generated videos on unseen tasks. Our approach is further able to synthesize a diverse set
-                of different behaviors which satisfy unseen language tasks.
-                </p>
-            </div> 
-
-            <center>
-            <figure>
-                <video width="1000" loop autoplay muted>
-                    <source src="materials/website_figure_2.mp4" type="video/mp4">
-                </video>
-            </figure>
-            </center>
-
-        <hr>
-
-        <h2>Real Robot Videos</h2>  
-            <div class="flex-row">
-                <p>Below, we further illustrate generated videos given language instructions on unseen real images. Our approach is
-                able to synthesize a diverse set of different behaviors which satisfy language instructions.</p>
-            </div> 
-
-            <center>
-            <figure>
-                <video width="1000" loop autoplay muted>
-                    <source src="materials/website_figure_3.mp4" type="video/mp4">
-                </video>
-            </figure>
-            <figure>
-                <div class="move-up">
-                    <video width="1000" loop autoplay muted>
-                        <source src="materials/website_figure_3_lower.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </figure>
-            </center>
-
-            <div class="flex-row">
-                <p>Our approach is further able to generate videos of robot behaviors given unseen natural language
-                instructions. Note that pretraining on a large online dataset of text/videos significantly helps 
-                generalization to unseen natural language queries.
-                </p>
-            </div> 
-
-            <center>
-            <figure>
-                <video width="700" loop autoplay muted>
-                    <source src="materials/website_figure_4.mp4" type="video/mp4">
-                </video>
-            </figure>
-            </center>
-
-        <hr>
-
-    </section> 
 
     <section id="related_projects">
         <hr>
         <h2>Related Resources</h2>
-
           <br>
-          Check out other recent work on leveraging foundation models for decision making at the FMDM workshop.
-          <br>
-        <div class="row vspace-top">
-        <div class="col-sm-3">
-            <div class="move-down">
-                <img src="materials/related/fmdm.png" class="img-fluid" alt="dd" style="width:100%">
-            </div>
-        </div>
-        <div class="col-sm-9">
-          <div class="paper-title">
-            <a href="https://sites.google.com/corp/view/fmdm-neurips/">Foundation Models for Decision Making NeurIPS2022 Workshop</a>
-        </div>
-          <div>
-	    The FMDM workshop brings together the decision making community and the foundation models community in vision and language to confront the challenges in decision making at scale. <a href="https://nips.cc/virtual/2022/workshop/49988">Recordings</a>.
-
-        </div>
-        </div>
-        </div>	
-
-          <br>
-          Check out a list of our related papers on leverage generative models for decision making.
+          Check out a list of our related papers that learn the components necessary to perform bilevel planning/task and motion planning from demonstrations.
           <br>
 
         <div class="row vspace-top">
         <div class="col-sm-3">
             <div class="move-down">
-                <img src="materials/related/dd.png" class="img-fluid" alt="dd" style="width:100%">
+                <img src="materials/related/loft_image.png" class="img-fluid" alt="dd" style="width:100%">
             </div>
         </div>
         <div class="col-sm-9">
           <div class="paper-title">
-            <a href="https://anuragajay.github.io/decision-diffuser/">Is Conditional Generative Modeling All You Need for Decision-Making?</a>
+            <a href="https://arxiv.org/abs/2103.00589">Learning Symbolic Operators for Task and Motion Planning</a>
         </div>
         <div>
-            We illustrate how conditional generative modeling is a powerful paradigm for decision-making, enabling us
-            utilize a reward conditional model to effectively perform offline RL. We further illustrate how conditional generative modeling enables
-            us to compose multiple different constraints and skills together.
+            We propose a bottom-up relational approach for learning operators for task and motion planning. Our approach can be seen as a "model-based" learning approach to TAMP. We compare with several model-free baselines.
         </div>
         </div>
         </div>
 
         <div class="row vspace-top">
-        <div class="col-sm-3">
-            <div class="move-down">
-                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                    <source src="materials/related/diffuser.mp4" type="video/mp4">
-                </video>
+            <div class="col-sm-3">
+                <div class="move-down">
+                    <img src="materials/related/predicators_image.png" class="img-fluid" alt="dd" style="width:100%">
+                </div>
             </div>
-        </div>
-        <div class="col-sm-9">
-          <div class="paper-title">
-            <a href="https://diffusion-planning.github.io/">Planning with Diffusion for Flexible Behavior Synthesis </a>
-        </div>
-        <div>
-            We illustrate how may utilize a trajectory level diffusion model as an effective data-driven planner. We
-            illustrate how this planner enables us to flexibly generate long sequences of actions subject novel goals and 
-            constraints as well as perform effective offline RL. 
-        </div>
-        </div>
-        </div>
+            <div class="col-sm-9">
+              <div class="paper-title">
+                <a href="https://arxiv.org/abs/2203.09634">Predicate Invention for Bilevel Planning</a>
+            </div>
+            <div>
+                We learn neuro-symbolic and relational state and action abstractions from demonstrations. The abstractions are explicitly optimized for effective and efficient bilevel planning.
+            </div>
+            </div>
+            </div>
 
-
+            <div class="row vspace-top">
+                <div class="col-sm-3">
+                    <div class="move-down">
+                        <img src="materials/related/nsrt_image.png" class="img-fluid" alt="dd" style="width:100%">
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                  <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2105.14074">Learning Neuro-Symbolic Relational Transition Models for Bilevel Planning</a>
+                </div>
+                <div>
+                    We propose Neuro-Symbolic Relational Transition Models (NSRTs), a novel class of transition models that are data-efficient to learn, compatible with powerful robotic task and motion planning methods, and generalizable over objects.
+                </div>
+                </div>
+                </div>
     </section> 
 
     <section>
