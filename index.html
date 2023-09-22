@@ -487,7 +487,7 @@ pre {
         <h2>Abstract</h2>
         <div class="flex-row">
             <p>
-            Bilevel planning, in which a high-level search over an abstraction of an environment is used to guide low-level decision-making, is an effective approach to solving long-horizon tasks in continuous state and action spaces. Recent work has shown how to enable such bilevel planning by learning action and transition model abstractions in the form of symbolic operators and neural samplers. In this work, we show that existing symbolic operator learning approaches fall short in many natural environments where agent actions tend to cause a large number of irrelevant propositions to change. This is primarily because they attempt to learn operators that optimize the prediction error with respect to observed changes in the propositions. To overcome this issue, we propose to learn operators that only model changes necessary for abstract planning to achieve the specified goal. Experimentally, we show that our approach learns operators that lead to efficient planning across 10 different hybrid robotics domains, including 4 from the challenging BEHAVIOR-100 benchmark, with generalization to novel initial states, goals, and objects.
+                An effective approach to solving long-horizon tasks in robotics domains with continuous state and action spaces is bilevel planning, wherein a high-level search over an abstraction of an environment is used to guide low-level decision-making. Recent work has shown how to enable such bilevel planning by learning abstract models in the form of symbolic operators and neural samplers. In this work, we show that existing symbolic operator learning approaches fall short in many robotics domains where a robot's actions tend to cause a large number of irrelevant changes in the abstract state. This is primarily because they attempt to learn operators that exactly predict all observed changes in the abstract state. To overcome this issue, we propose to learn operators that 'choose what to predict' by only modelling changes necessary for abstract planning to achieve specified goals. Experimentally, we show that our approach learns operators that lead to efficient planning across 10 different hybrid robotics domains, including 4 from the challenging BEHAVIOR-100 benchmark, while generalizing to novel initial states, goals, and objects.
             </p>
         </div>
     </section>
@@ -567,9 +567,9 @@ pre {
     <section id="acknowledgements">
         <hr>
         <h2>Acknowledgements</h2>
-          We gratefully acknowledge support from NSF grant 2214177; from AFOSR grant FA9550-22-1-0249; from ONR MURI grant N00014-22-1-2740; from ARO grant W911NF-23-1-0034; from the MIT-IBM Watson Lab; and from the MIT Quest for Intelligence.
-          Nishanth, Willie, and Tom are supported by NSF Graduate Research Fellowships.
-          Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of our sponsors.
+        We gratefully acknowledge support from NSF grant 2214177; from AFOSR grant FA9550-22-1-0249; from ONR MURI grant N00014-22-1-2740; from ARO grant W911NF-23-1-0034; from the MIT-IBM Watson Lab; from the MIT Quest for Intelligence; and from the Boston Dynamics Artificial Intelligence Institute.
+        Nishanth, Willie, and Tom are supported by NSF Graduate Research Fellowships.
+        Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of our sponsors.
           Additionally, we thank <a href='https://jorge-a-mendez.github.io/'>Jorge Mendez</a> and <a href='https://aidanreececurtis.com/'>Aidan Curtis</a> for helpful comments on earlier drafts of our paper.
           <br>
           This webpage template was recycled from <a href='https://nv-tlabs.github.io/LION/'>here</a>.
